@@ -2,13 +2,77 @@
 <html lang="en"
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        :root {
+        /* Colors */
+        --main-background: rgb(255, 255, 255);
+        --main-foreground: rgb(83, 126, 226);
+        --tertiary-color: rgb(21, 52, 125);
+        --type-color: rgb(0, 0, 1);
+
+        /* Fonts */
+        --main-font: "Raleway", sans-serif;
+        --secondary-font: "Boldonse", sans-serif;
+
+        }
+
+        /* Main webpage */
+        body {
+            background-color: var(--main-background);
+            color: var(--type-color);
+            font-family: var(--main-font);
+        }
+
+        /* Headings */
+        h1, h2, h3, h4, h5, h6 {
+            background-color: var(--main-foreground);
+            color: var(--main-background);
+            font-family: var(--secondary-font);
+            padding: 20px;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            background-color: var(--tertiary-color) !important;
+            color: var(--main-background);
+            font-family: var(--secondary-font);
+        }
+
+        /* Navigation links */
+        .navbar a {
+            color: var(--main-background);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--tertiary-color);
+            color: var(--main-background);
+            padding: 30px
+        }
+
+        /* Buttons */
+        button {
+            background-color: var(--main-foreground);
+            color: var(--main-background);
+        }
+
+    </style>
 
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark">
             <a class="navbar-brand" href="#">Morgen Schmidt</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
                 aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
