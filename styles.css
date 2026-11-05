@@ -1,0 +1,13 @@
+:root {
+    /* Background and text colours */
+    --main-background: #f5f3ed;
+    --main-foreground: #20332f;
+
+    /* Navigation and footer */
+    --navbar-background: #294b40;
+    --footer-background: #294b40;
+
+    /* Accent colours */
+    --accent-color: #c87554;
+    --secondary-color: #a9b69a;
+}
