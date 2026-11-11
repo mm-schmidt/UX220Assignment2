@@ -66,6 +66,8 @@
             color: var(--main-background);
         }
 
+
+        
     </style>
 
 </head>
@@ -110,6 +112,13 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
     <script src="https://custom-element.pages.dev/custom-element.js" crossorigin="anonymous"></script>
+
+class Centre extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `<div style="display: flex; justify-content: center; align-items: center;">${this.innerHTML}</div>`;
+    }
+}
+customElements.define('x-centre', Centre);
 </body>
 
 </html>
